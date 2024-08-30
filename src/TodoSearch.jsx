@@ -1,14 +1,10 @@
-import { useState } from "react";
 import "./styles/TodoSearch.css";
 
-export const TodoSearch = () => {
-  const [searchValue, setSearchValue] = useState("");
-
-  console.log('Los usuarios buscan todos de ' + searchValue);
+export const TodoSearch = ({searchValue, setSearchValue}) => {
 
   return (
     <input
-      placeholder="Cortar cebolla"
+      placeholder="Escribe alguna tarea"
       value={searchValue}
       className="TodoSearch"
       onChange={(event) => {
